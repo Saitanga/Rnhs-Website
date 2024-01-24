@@ -1,0 +1,86 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 69vh;
+    background-image: url(PEKTUR.jpg);
+    background-position: center;
+}
+
+.wrapper {
+    width: 469px;
+    background: skyblue;
+    border-radius: 8px;
+    color: aqua;
+    opacity: 0.9;
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 18px;
+    color: gray;
+}
+
+.wrapper .input-box {
+    align-items: center;
+    text-align: center;
+    background: transparent;
+}
+
+.input-box .input-field{
+    position: relative;
+    width: 100%;
+}
+
+.input-box .input-field input {
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 15px;
+}
+
+.input-box .input-field input {
+    color: black;
+}
+
+.input-box .input-field{
+    position: relative;
+
+}
+
+.wrapper a {
+    border: 1px solid black;
+    background: white;
+    padding: 1px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.wrapper label {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: black;
+    margin: 16px;
+    text-align: left;
+}
+
+ .radio{
+    color: black;
+}
+    

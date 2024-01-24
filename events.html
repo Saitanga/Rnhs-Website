@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rosales National Higschool MAIN PAGE</title>
+
+        <link rel="stylesheet" href="no2.css">
+    </head>
+
+    <nav>
+        <div>
+            <a href="pangalawang cud.html">
+                <img src="lugu but bitter.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown" style="float: left">
+                    <a href="#" class="dropbtn">Strands</a>
+                    <div class="dropdown-content">
+                        <a href="stem.html">Stem</a>
+                        <a href="humss.html">Humss</a>
+                        <a href="abm.html">Abm</a>
+                        <a href="gas.html">Gas</a>
+                        <a href="tvl.html">Tvl</a>
+                    </div>
+                </li>
+                <li><a href="#" id="logoutBtn" onclick="confirmLogout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function confirmLogout() {
+            var confirmLogout = window.confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                // Add the code to perform logout here
+                // For example, redirecting to the logout page
+                window.location.href = "Lugin.html";
+            }
+        }
+    </script>
+        <p>SSLG Officers of Rosales National High School shine bright as they actively participated 
+            attended the Day 1 and Day 2 of the Division Leadership Training at Manaoag National High School! 💙</P>
+
+        <div class="image-slider">
+            <img class="slider-image" src="an.jpg" alt="Image 1">
+            <img class="slider-image" src="an1.jpg" alt="Image 2">
+            <img class="slider-image" src="an2.jpg" alt="Image 3">
+            
+        </div>
+        <p>The SSLG Officers exemplified this as they delved into the essence of leadership, honing their skills 
+         understanding the significance of leading with purpose and integrity. Their dedication and enthusiasm 
+        the potential of future leaders in our midst.</p>
+         <p>As they gear up for Day 3, we look forward to witnessing the continued growth and empowerment of these 
+student leaders from Pangasinan II! Keep shining, keep leading, and keep inspiring. </p>
+<style>
+p {
+    text-align: center;
+        }
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+        }
+</style>
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider-image');
+            
+            function showSlide(n) {
+                slides.forEach((slide) => (slide.style.display = 'none'));
+                slides[n].style.display = 'block';
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            // Initial display
+            showSlide(currentSlide);
+            
+            // Auto slide change (every 3 seconds in this example)
+            setInterval(() => {
+                nextSlide();
+            }, 3000);
+        </script>
+        
+        <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>&copy; 2024 All Rights Reserved By <a href="Comprog Villapa.html"> Daves Villapa</a></p>
+    <p>Email: DavesVillapa8@gmail.com</p>
+</footer>

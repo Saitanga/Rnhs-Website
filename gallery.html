@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rosales National Higschool MAIN PAGE</title>
+
+        <link rel="stylesheet" href="no2.css">
+    </head>
+
+    <nav>
+        <div>
+            <a href="pangalawang cud.html">
+                <img src="lugu but bitter.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown" style="float: left">
+                    <a href="#" class="dropbtn">Strands</a>
+                    <div class="dropdown-content">
+                        <a href="stem.html">Stem</a>
+                        <a href="humss.html">Humss</a>
+                        <a href="abm.html">Abm</a>
+                        <a href="gas.html">Gas</a>
+                        <a href="tvl.html">Tvl</a>
+                    </div>
+                </li>
+                <li><a href="#" id="logoutBtn" onclick="confirmLogout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function confirmLogout() {
+            var confirmLogout = window.confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                // Add the code to perform logout here
+                // For example, redirecting to the logout page
+                window.location.href = "Lugin.html";
+            }
+        }
+    </script>
+
+        <p>Welcome to the Rosales National High School Gallery, a vibrant space that <br>
+         the rich tapestry of academic excellence, cultural diversity, and creative achievement.<br>
+         Nestled within the heart of Rosales, this gallery serves as a visual <br>
+         of the school's journey, showcasing the inspiring moments, remarkable talents,<br>
+        and collective endeavors of our students and educators. From captivating artwork <br>
+        innovative projects to snapshots of memorable events, each exhibit reflects <br>
+         dynamic spirit that defines Rosales National High School. Step into this gallery,<br>
+         where every frame tells a story of growth, learning, and the unwavering <br>
+        to nurturing well-rounded individuals prepared for the challenges of the future.<br>
+         </p>
+
+         <style>
+            p {
+                text-align: center;
+                    }
+            
+            p {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.6;
+                margin-top: 20px;
+                    }
+            </style>
+
+        <div class="image-slider">
+            <img class="slider-image" src="gal.jpg" alt="Image 1">
+            <img class="slider-image" src="gal1.jpg" alt="Image 2">
+            <img class="slider-image" src="gal2.jpg" alt="Image 3">
+            <img class="slider-image" src="gal3.jpg" alt="Image 3">
+            <img class="slider-image" src="gal4.jpg" alt="Image 3">
+            <img class="slider-image" src="gal5.jpg" alt="Image 3">
+        </div>
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider-image');
+            
+            function showSlide(n) {
+                slides.forEach((slide) => (slide.style.display = 'none'));
+                slides[n].style.display = 'block';
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            // Initial display
+            showSlide(currentSlide);
+            
+            // Auto slide change (every 3 seconds in this example)
+            setInterval(() => {
+                nextSlide();
+            }, 3000);
+        </script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>&copy; 2024 All Rights Reserved By <a href="Comprog Villapa.html"> Daves Villapa</a></p>
+    <p>Email: DavesVillapa8@gmail.com</p>
+</footer>
+
+<style>
+    footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+}
+
+</style>
+        

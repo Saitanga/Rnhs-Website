@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rosales National Higschool MAIN PAGE</title>
+
+        <link rel="stylesheet" href="no2.css">
+    </head>
+
+    <nav>
+        <div>
+            <a href="pangalawang cud.html">
+                <img src="lugu but bitter.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown" style="float: left">
+                    <a href="#" class="dropbtn">Strands</a>
+                    <div class="dropdown-content">
+                        <a href="stem.html">Stem</a>
+                        <a href="humss.html">Humss</a>
+                        <a href="abm.html">Abm</a>
+                        <a href="gas.html">Gas</a>
+                        <a href="tvl.html">Tvl</a>
+                    </div>
+                </li>
+                <li><a href="#" id="logoutBtn" onclick="confirmLogout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function confirmLogout() {
+            var confirmLogout = window.confirm("Are you sure you want to logout?");
+            if (confirmLogout) {
+                // Add the code to perform logout here
+                // For example, redirecting to the logout page
+                window.location.href = "Lugin.html";
+            }
+        }
+    </script>
+
+        <p>Congratulations to the outstanding winners and participants who showcased excellence <br>
+            at the Division Mathematics Recreational Games Festival, proudly representing Rosales <br>
+            National High School. Your dedication to "Mathematics for Everyone" has truly shone at <br>
+            Benigno V. Aldana National High School on January 10, 2024. Kudos to all for making math <br>
+            an inspiring journey for everyone involved!
+         </p>
+
+        <div class="image-slider">
+            <img class="slider-image" src="ann.jpg" alt="Image 1">
+            <img class="slider-image" src="ann1.jpg" alt="Image 2">
+            <img class="slider-image" src="ann2.jpg" alt="Image 3">
+            
+        </div>
+
+        <style>
+            p {
+    text-align: center;
+        }
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+        }
+        </style>
+        
+        
+         <p>WINNINGS:
+            TOWER OF HANOI:
+            <br>
+            <br>
+            Coach: TERESA R. PONTAOE
+            <br>
+            <br>
+            Grade 11: ALENE HOPE D. PONCE (11 HUMSS B. CABRERA)- 9th Place
+            <br>
+            <br>
+            Grade 12: AYELLAH RIO P. NAVARRO (12 STEM J.SALCEDO)- 9th Place
+            <br>
+            <br>
+            RUBIK'S CUBE:
+            <br>
+            <br>
+            Coach: KRIZELLE B. GABERTAN
+            <br>
+            <br>
+            Grade 11: JANREIN ORDINARIO (11 STEM EDISON)- 4th 
+            <br>
+            <br>
+            MAGIC SQUARE:
+            <br>
+            <br>
+            Coach: MARY ANN NEVADO
+            <br>
+            <br>
+            Grade 12:CHRISJAN JHOUARD AGUSTIN (12 STEM SALCEDO)- 5th Place
+            <br>
+            <br>
+            Special thanks to ma'am Jocelyn Rivera, Head Teacher III of the Mathematics Department, and to ma'am Rowena Lea G. Moreno, Principal IV
+         </p>
+     
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider-image');
+            
+            function showSlide(n) {
+                slides.forEach((slide) => (slide.style.display = 'none'));
+                slides[n].style.display = 'block';
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            // Initial display
+            showSlide(currentSlide);
+            
+            // Auto slide change (every 3 seconds in this example)
+            setInterval(() => {
+                nextSlide();
+            }, 3000);
+        </script>
+        
+        <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>&copy; 2024 All Rights Reserved By <a href="Comprog Villapa.html"> Daves Villapa</a></p>
+    <p>Email: DavesVillapa8@gmail.com</p>
+</footer>
